@@ -1,0 +1,34 @@
+name: Auto Update JSON
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # প্রতি ৩০ মিনিটে অটোমেটিক আপডেট হবে
+  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # ফাইলে লেখার পারমিশন
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install libraries
+        run: pip install requests
+
+      - name: Run Python script
+        run: python main.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "Auto Bot"
+          git config --global user.email "bot@github.com"
+          git add channels.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated channel list" && git push)
