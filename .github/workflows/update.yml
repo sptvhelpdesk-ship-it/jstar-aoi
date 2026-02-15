@@ -2,14 +2,14 @@ name: Auto Update JSON
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # প্রতি ৩০ মিনিটে অটোমেটিক আপডেট হবে
-  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # ফাইলে লেখার পারমিশন
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -26,9 +26,19 @@ jobs:
       - name: Run Python script
         run: python main.py
 
+      # এই ধাপটি যোগ করা হয়েছে চেক করার জন্য
+      - name: Verify File Exists
+        run: ls -la
+
       - name: Commit and Push changes
         run: |
           git config --global user.name "Auto Bot"
           git config --global user.email "bot@github.com"
-          git add channels.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated channel list" && git push)
+          # যদি ফাইল থাকে তবেই অ্যাড করবে
+          if [ -f channels.json ]; then
+            git add channels.json
+            git diff --quiet && git diff --staged --quiet || (git commit -m "Updated channel list" && git push)
+          else
+            echo "Error: channels.json not found, skipping push."
+            exit 1
+          fi
