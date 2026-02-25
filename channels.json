@@ -115,19 +115,6 @@
     }
   },
   {
-    "channel_id": "166",
-    "name": "Cartoon Network Telugu",
-    "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Cartoon_Network_Telugu.png",
-    "category": "Kids",
-    "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/CNTelugu_BTS/output/index.mpd",
-    "token": "__hdnea__=st=1772023356~exp=1772109756~acl=/*~hmac=0095cde446f84ff4a00016dd2b41d4a8a84348dbbca036c919418aa08352f1f9",
-    "referer": "https://www.jiotv.com/",
-    "userAgent": "@allinone_reborn",
-    "drm": {
-      "3e5ec63e26c1520380236941c3848f68": "f944e7ee9260a9e6239170db4d6fa713"
-    }
-  },
-  {
     "channel_id": "167",
     "name": "Zee TV HD",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_TV_HD.png",
@@ -4558,19 +4545,6 @@
     "userAgent": "@allinone_reborn",
     "drm": {
       "ea48cf7b24dd54dd98c369626b9ad105": "ee5778d627dfae2c2affc02d76e8db6c"
-    }
-  },
-  {
-    "channel_id": "817",
-    "name": "Cartoon Network Tamil",
-    "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Cartoon_Network_Tamil.png",
-    "category": "Kids",
-    "mpd": "https://jiotvmblive.cdn.jio.com/bpk-tv/CartoonNetworkTamil_BTS/output/index.mpd",
-    "token": "__hdnea__=st=1772023356~exp=1772109756~acl=/*~hmac=0095cde446f84ff4a00016dd2b41d4a8a84348dbbca036c919418aa08352f1f9",
-    "referer": "https://www.jiotv.com/",
-    "userAgent": "@allinone_reborn",
-    "drm": {
-      "553fc9bdb0115b24b23d04be203d1b9d": "a220f0a32aaee1e6989ef8e6a6728fe1"
     }
   },
   {
