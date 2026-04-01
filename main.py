@@ -4,7 +4,7 @@ import sys
 import os
 
 # আপনার লিঙ্ক
-SOURCE_URL = "https://allinonereborn.online/jstrweb2/jstr.json"
+SOURCE_URL = "https://j-plus.free.nf/jtv/jstr.json"
 OUTPUT_FILE = "channels.json"
 
 def update_json():
