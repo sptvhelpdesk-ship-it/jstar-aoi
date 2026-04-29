@@ -4,7 +4,7 @@ import sys
 import os
 
 # 🔗 ORIGINAL SOURCE
-SOURCE_URL = "https://j-plus.free.nf/jtv/jstrplus.json"
+SOURCE_URL = "https://allinonereborn.online/jtv-fetch/jstr4web.json"
 
 # 🔥 YOUR CLOUDFLARE WORKER PROXY
 PROXY_BASE = "https://tight-river-c898.ranatoufik66.workers.dev/?url="
