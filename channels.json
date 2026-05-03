@@ -684,6 +684,15 @@
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonySAB.png"
   },
   {
+    "name": "Sony SAB SD",
+    "id": "154",
+    "category": "Entertainment",
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Sony_SAB_MOB/WDVLive/index.mpd",
+    "keyId": "ba4d9b38517552de9654d3652d27933b",
+    "key": "31e7cbf3d289d3116386457ed8bac3a2",
+    "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sony_SAB.png"
+  },
+  {
     "name": "And TV HD",
     "id": "472",
     "category": "Entertainment",
